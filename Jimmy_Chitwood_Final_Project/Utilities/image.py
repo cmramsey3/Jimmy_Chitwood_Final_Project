@@ -13,8 +13,6 @@
 # Citations:
 # Anything else that's relevant:
 
-
-
 from PIL import Image
 import matplotlib.pyplot as plt
  
