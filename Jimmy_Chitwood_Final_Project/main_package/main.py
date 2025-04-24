@@ -12,44 +12,14 @@
 # Citations:
 # Anything else that's relevant:
 
-from Utilities.location_decryption import LocationDecryptor
-from Utilities.movie_decryption import MovieDecryptor
-from Utilities.image import ImageDisplayer
-
-class FinalProjectRunner:
-    def __init__(self, team_name):
-        self.team_name = team_name
-        self.hints_path = "Data/EncryptedGroupHints Spring 2025.json"
-        self.english_path = "Data/UCEnglish.txt"
-        self.encrypted_movie_path = "Data/TeamsAndEncryptedMessagesForDistribution.json"
-        self.image_path = "Data/group_photo.jpg"  # Make sure this exists
-        self.fernet_key = None  # Set this when available
-
-    def run_location_decryption(self):
-        decryptor = LocationDecryptor(self.team_name, self.hints_path, self.english_path)
-        location = decryptor.decrypt()
-        print(f"Decrypted Location:\n{location}\n")
-
-    def run_movie_decryption(self):
-        if not self.fernet_key:
-            print("Fernet key not provided. Skipping movie decryption.")
-            return
-        decryptor = MovieDecryptor(self.team_name, self.encrypted_movie_path, self.fernet_key)
-        movie = decryptor.decrypt()
-        print(f"Decrypted Movie Title:\n{movie}\n")
-
-    def show_group_photo(self):
-        displayer = ImageDisplayer(self.image_path)
-        displayer.display()
-
-    def run_all(self):
-        self.run_location_decryption()
-        # Uncomment these when ready
-        # self.run_movie_decryption()
-        # self.show_group_photo()
-
+from Utilities.location_decryption import *
+from Utilities.movie_decryption import *
+from Utilities.image import *
 
 if __name__ == "__main__":
-    runner = FinalProjectRunner(team_name="Jimmy Chitwood")
-    # runner.fernet_key = b"YOUR_KEY_HERE"  # Set this when you have the key
-    runner.run_all()
+    team_name = "Jimmy Chitwood"
+    hints_path = "Data/EncryptedGroupHints Spring 2025.json"
+    english_path = "Data/UCEnglish.txt"
+    decryptor = LocationDecryptor(team_name, hints_path, english_path)
+    location = decryptor.decrypt()
+    print(f"Decrypted Location:\n{location}\n")
