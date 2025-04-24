@@ -40,7 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="main_package\" />
+    <Folder Include="Data\" />
     <Folder Include="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\EncryptedGroupHints Spring 2025.json" />
+    <Content Include="Data\TeamsAndEncryptedMessagesForDistribution.json" />
+    <Content Include="Data\UCEnglish.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
