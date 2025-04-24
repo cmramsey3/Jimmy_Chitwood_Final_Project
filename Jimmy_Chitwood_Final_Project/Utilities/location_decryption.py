@@ -11,7 +11,7 @@
 # Brief Description of what this module does: Uses the files give to decrypt the location where our team should take our picture
 # Uses the UCEnglish text file and the EncryptedGroupHints JSON File
 # Citations:
-# Anything else that's relevant:
+# Anything else that's relevant: 
 
 
 
