@@ -12,3 +12,34 @@
 # team and find out our assigned movie
 # Citations: cryptography.fernet library
 # Anything else that's relevant:
+
+import json
+from cryptography.fernet import *
+
+
+class movie_decryption():
+    """
+    """
+    def __init__(self, input_file = "Data/TeamsAndEncryptedMessagesForDistribution.json"):
+        """
+        """
+        self.file = input_file
+        self.team_name = "Jimmy Chitwood"
+        self.key = Fernet("GusN5ceicQjGeKNr0gedUkjZ6h4I8xXm6Thx_issRko=")
+
+    def get_encrypt(self):
+        """
+        """
+        with open(self.file, "r") as f:
+            encrypted_list = json.load(f)[self.team_name]
+            encrypted_data = encrypted_list[0]
+        return encrypted_data
+    def decrypt_data(self, encrypted_data):
+        """
+        """
+        token = encrypted_data.encode()
+        decrypt = self.key.decrypt(token)
+        decrypted_movie = decrypt.decode()
+        print(decrypted_movie)
+        
+
