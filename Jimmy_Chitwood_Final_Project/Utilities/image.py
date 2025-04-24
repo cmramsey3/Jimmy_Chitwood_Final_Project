@@ -12,3 +12,19 @@
 # image in the console window
 # Citations:
 # Anything else that's relevant:
+
+
+
+from PIL import Image
+import matplotlib.pyplot as plt
+ 
+class ImageDisplayer:
+    def __init__(self, image_path):
+        self.image_path = image_path
+ 
+    def display(self):
+        img = Image.open(self.image_path)
+        plt.imshow(img)
+        plt.axis('off')
+        plt.title("Group Photo")
+        plt.show()
