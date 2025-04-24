@@ -23,3 +23,5 @@ if __name__ == "__main__":
     decryptor = LocationDecryptor(team_name, hints_path, english_path)
     location = decryptor.decrypt()
     print(f"Decrypted Location:\n{location}\n")
+    team_picture = ImageDisplayer("Data/UC_Baseball_Team.jpg")
+    team_picture.display()
