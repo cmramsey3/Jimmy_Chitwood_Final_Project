@@ -33,4 +33,4 @@ if __name__ == "__main__":
     # Decrypts and Prints Movie Results
     movieEncryption = movie_decryption()
     encrypted_data = movieEncryption.get_encrypt()
-    movieEncryption.decrypt_data(encrypted_data)
+    movieEncryption.decrypt_data(encrypted_data) 
