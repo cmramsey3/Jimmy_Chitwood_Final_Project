@@ -17,8 +17,10 @@ from Utilities.movie_decryption import *
 from Utilities.image import *
 
 if __name__ == "__main__":
-    #team_picture = ImageDisplayer("Data/UC_Baseball_Team.jpg")
-    #team_picture.display()
+
+    # Saves path and displays team image at UC Baseball Stadium with our chose movie quote
+    team_picture = ImageDisplayer("Data/UC_Baseball_Jimmy_Chitwood.jpeg")
+    team_picture.display()
     
     # Decrypts and Prints Location Message
     team_name = "Jimmy Chitwood"
