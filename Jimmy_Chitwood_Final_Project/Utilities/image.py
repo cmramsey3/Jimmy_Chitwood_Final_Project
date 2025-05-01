@@ -7,7 +7,6 @@
 # Semester/Year: Spring 2025
 # Brief Description of the assignment: Use give JSON files to decrypt hidden messages for our team 
 # to take a picture with a message at the location assigned to our team
-
 # Brief Description of what this module does: This module will hold the methods that will load and display our team
 # image in the console window
 # Citations:
@@ -17,10 +16,18 @@ import matplotlib.pyplot as plt
 from PIL import Image 
 
 class ImageDisplayer:
+    """
+    loads and displays image
+    """
     def __init__(self, image_path):
         self.image_path = image_path
 
     def display(self):
+        """
+        open and display the image as well as hide the axis
+        @Param:None
+        @return:None 
+        """
         img = Image.open(self.image_path)
         plt.imshow(img)
         plt.axis('off')
