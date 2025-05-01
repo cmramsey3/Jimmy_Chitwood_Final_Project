@@ -9,7 +9,7 @@
 # to take a picture with a message at the location assigned to our team
 # Brief Description of what this module does: This module will hold the methods that will load and display our team
 # image in the console window
-# Citations:
+# Citations:ChatGpt
 # Anything else that's relevant:
 
 import matplotlib.pyplot as plt

@@ -9,7 +9,7 @@
 # to take a picture with a message at the location assigned to our team
 # Brief Description of what this module does: Uses the TeamsAndEncryptedMessagesForDistribution file to decrypt the hidden message for our
 # team and find out our assigned movie
-# Citations: cryptography.fernet library
+# Citations: cryptography.fernet library Chatgpt
 # Anything else that's relevant:
 
 import json

@@ -9,7 +9,7 @@
 # to take a picture with a message at the location assigned to our team
 
 # Brief Description of what this module does: Main entry point code that will invoke each of the methods that we create
-# Citations:
+# Citations:Chatgpt
 # Anything else that's relevant:
 
 from Utilities.location_decryption import *
