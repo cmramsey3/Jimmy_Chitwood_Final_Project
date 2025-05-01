@@ -7,14 +7,10 @@
 # Semester/Year: Spring 2025
 # Brief Description of the assignment: Use give JSON files to decrypt hidden messages for our team 
 # to take a picture with a message at the location assigned to our team
-
 # Brief Description of what this module does: Uses the files give to decrypt the location where our team should take our picture
 # Uses the UCEnglish text file and the EncryptedGroupHints JSON File
-# Citations:
+# Citations:ChatGpt
 # Anything else that's relevant: 
-
-
-
 # Our team name is a key in the dictionary and we use it to match the numbers to words in the txt file to come up with our location
 
 import json
